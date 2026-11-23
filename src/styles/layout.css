@@ -1140,6 +1140,7 @@ svg {
 }
 
 .brief-chapter-card {
+  scroll-margin-top: 84px;
   padding: 26px 28px 30px;
   border-radius: 22px;
   background: var(--glass-strong);
@@ -1259,6 +1260,7 @@ svg {
 }
 
 .detailed-chapter-section {
+  scroll-margin-top: 84px;
   padding-top: 32px;
 }
 .detailed-chapter-section + .detailed-chapter-section {
