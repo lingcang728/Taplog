@@ -4,7 +4,7 @@
 
 # Taplog
 
-**Traceable Visual Lecture Notes: Recover Context Scattered Across a Long Recording**
+**Traceable Visual Notes for Long Talks: Recover Context Scattered Across a Recording**
 
 English | [简体中文](./README.zh-CN.md)
 
@@ -15,7 +15,7 @@ English | [简体中文](./README.zh-CN.md)
 
 <br />
 
-<img src="docs/screenshots/en-gallery-light.png" alt="Taplog lecture gallery in Light Mist Canvas" width="960" />
+<img src="docs/screenshots/en-gallery-light.png" alt="Taplog talk gallery in Light Mist Canvas" width="960" />
 
 </div>
 
@@ -23,15 +23,15 @@ English | [简体中文](./README.zh-CN.md)
 
 ## Why Taplog
 
-Most AI lecture notes link each takeaway to a **single timestamp**. That assumes speakers finish every thought in one place.
+Most AI notes for long talks link each takeaway to a **single timestamp**. That assumes speakers finish every thought in one place.
 
-In real lectures, they rarely do. A professor gives a clean recommendation at **13:40**, adds a performance boundary during a benchmark at **37:50** (`+24m later`), and walks back an earlier "always optimal" rule during Q&A at **41:05** (`+25m later`). When a student clicks `13:40` and hears a confident, complete sentence in the speaker's own voice, they walk away believing a half-truth with full confidence.
+In real talks, they rarely do. A speaker gives a clean recommendation at **13:40**, adds a performance boundary during a benchmark at **37:50** (`+24m later`), and walks back an earlier "always optimal" rule during Q&A at **41:05** (`+25m later`). When a student clicks `13:40` and hears a confident, complete sentence in the speaker's own voice, they walk away believing a half-truth with full confidence.
 
-**Taplog** keeps the calm reading feel of visual lecture notes while linking every claim to all the moments where the speaker introduced it, constrained it, or revised it:
+**Taplog** keeps the calm reading feel of visual talk notes while linking every claim to all the moments where the speaker introduced it, constrained it, or revised it:
 
 - **Glanceable risk separation**: Only high-risk revisions (`Caveat` and `Correction`) surface on the outer canvas with their time jump (such as `Caveat · +24m later`). Optional `Why` and `Example` clips stay quietly tucked away until you ask for them.
 - **Bounded playback**: Playing an evidence clip automatically pauses at the end of that exact excerpt so a 45-minute recording never runs away in the background. You can expand backwards by `-10s`, listen `+15s` further, or peek at 5 surrounding transcript lines without leaving your place.
-- **Zero-backend & local-first**: Runs completely in your browser with two built-in bilingual demo lectures and local WebAssembly Whisper transcription for your own recordings.
+- **Zero-backend & local-first**: Runs completely in your browser with two built-in bilingual demo talks and local WebAssembly Whisper transcription for your own recordings.
 
 ---
 
@@ -39,7 +39,7 @@ In real lectures, they rarely do. A professor gives a clean recommendation at **
 
 ### 1. Quiet Cover Gallery (Light & Dark)
 
-Every lecture opens as a calm Bento cover card with deterministic generative artwork (`dunes`, `petals`, `ribbon`, and `orbs`) paired across light and dark palettes. Cards stay free of text walls, showing only the title, speaker, duration, distant caveat count, miniature waveform, and a circular `PlayRing` for quick listening right from the shelf.
+Every talk opens as a calm Bento cover card with deterministic generative artwork (`dunes`, `petals`, `ribbon`, and `orbs`) paired across light and dark palettes. Cards stay free of text walls, showing only the title, speaker, duration, distant caveat count, miniature waveform, and a circular `PlayRing` for quick listening right from the shelf.
 
 <table>
   <tr>
@@ -56,7 +56,7 @@ Every lecture opens as a calm Bento cover card with deterministic generative art
 
 ### 2. Focused Visual Schemas (Level 2 · Default)
 
-Opening a lecture brings you into a single-chapter focused view (with a one-click toggle to view all chapters at once). Instead of walls of prose, each chapter distills its argument into one of two predictable visual structures: a **Progressive Refinement Flow** or a **Multi-Dimensional Comparison Matrix**.
+Opening a talk brings you into a single-chapter focused view (with a one-click toggle to view all chapters at once). Instead of walls of prose, each chapter distills its argument into one of two predictable visual structures: a **Progressive Refinement Flow** or a **Multi-Dimensional Comparison Matrix**.
 
 <img src="docs/screenshots/en-schema-flow.png" alt="Focused Structure Schema with distant caveat and correction badges" width="960" />
 
@@ -64,9 +64,9 @@ Opening a lecture brings you into a single-chapter focused view (with a one-clic
 
 Click any diagram node, matrix cell, or margin badge to slide open the frosted **Trace Drawer** on the right without breaking your layout or scrolling away from the note:
 
-- **50-minute mini timeline** showing how far apart the speaker's remarks sit across the full lecture
+- **50-minute mini timeline** showing how far apart the speaker's remarks sit across the full talk
 - **One-click `Play core evidence`** chaining the origin clip and distant caveats together with a skip notice in between
-- **Expandable lecture prose** right inside the drawer when reading in Schema mode
+- **Expandable note text** right inside the drawer when reading in Schema mode
 - **Bounded clip cards** with truncated verbatim leads, interactive waveforms, `-10s earlier`, `Listen +15s more`, and `5 surrounding lines`
 
 <img src="docs/screenshots/en-trace-sheet.png" alt="Right slide-over Trace Drawer with timeline distribution and bounded clip players" width="960" />
@@ -79,9 +79,9 @@ Switch to **Editorial** in the top bar for long-form reading on warm archival pa
 
 ### 5. Comparison Matrix & Discreet HCI Study Workbench
 
-The product interface stays minimal by default. For coursework or user studies, append `?study=1` to the URL (or press `Ctrl + Shift + E` / `Cmd + Shift + E`) to reveal the **HCI Study Control Bar** and jump straight into a lecture:
+The product interface stays minimal by default. For user studies, append `?study=1` to the URL (or press `Ctrl + Shift + E` / `Cmd + Shift + E`) to reveal the **Study Control Bar** and jump straight into a lecture:
 
-- Switch cleanly between **C1 (Single-Anchor Baseline)**, **C2 (Layered Multi-Anchor)**, **C3 (Full Searchable Transcript)**, and **C4 (Pure Visual, No Audio)** over the exact same underlying lecture text
+- Switch cleanly between **C1 (Single-Anchor Baseline)**, **C2 (Layered Multi-Anchor)**, **C3 (Full Searchable Transcript)**, and **C4 (Pure Visual, No Audio)** over the exact same underlying note text
 - Lock readers to Schemas or Editorial mode per experimental block
 - Built-in **T1–T4 study tasks**, including two-step confidence ratings (before vs. after audio verification)
 - One-click **CSV / JSON** behavioral log export
@@ -113,11 +113,11 @@ Open `http://127.0.0.1:5173/` in your browser.
 1. **Browse the gallery**: Switch between `All lectures` and `With caveats`, or click the sliders icon in the top right to try `Light / Dark` themes and `English / 中文`.
 2. **Inspect a distant caveat**: Click **M1 · Declarative UI List Diffing and Scale Boundaries**, open chapter **02 Progressive Filtering Pipeline**, and click the amber `Caveat · +24m later` card.
 3. **Verify with bounded audio**: In the right drawer, click `Play core evidence` (or play any single clip). Playback stops automatically at the clip boundary and marks the excerpt `Verified`.
-4. **Switch to Editorial Paper**: Click **Editorial** in the center switcher to read the full lecture prose with its synced margin rail.
+4. **Switch to Editorial Paper**: Click **Editorial** in the center switcher to read the full note text with its synced margin rail.
 
-### Built-in Demo Lectures
+### Built-in Demo Talks
 
-Both built-in lectures are available in full **English** and **Simplified Chinese** and work immediately without downloading external audio files (the player uses your browser's built-in speech synthesis alongside synchronized waveforms until you import a real recording):
+Both built-in talks are available in full **English** and **Simplified Chinese** and work immediately without downloading external audio files (the player uses your browser's built-in speech synthesis alongside synchronized waveforms until you import a real recording):
 
 | Code | Topic | Length | Highlights |
 |---|---|---|---|
@@ -128,11 +128,11 @@ Both built-in lectures are available in full **English** and **Simplified Chines
 
 ## Importing Your Own Recordings
 
-Click **Import** in the top bar (or the frosted import strip at the bottom of the gallery) to select any local `.mp3`, `.wav`, or `.m4a` lecture file:
+Click **Import** in the top bar (or the frosted import strip at the bottom of the gallery) to select any local `.mp3`, `.wav`, or `.m4a` talk recording:
 
 1. Taplog decodes the audio and builds its waveform locally in your browser.
 2. A dedicated Web Worker runs quantized Whisper (`onnx-community/whisper-tiny`) over **30-second sliding chunks** with overlap deduplication, removing the typical 10-minute short-clip limit.
-3. Once finished, the draft lecture opens directly in your workspace with full playback and searchable timestamps.
+3. Once finished, the draft talk opens directly in your workspace with full playback and searchable timestamps.
 
 > **Note on first transcription**: The first time you transcribe a local recording, your browser downloads the quantized Whisper model weights from Hugging Face and caches them locally. To serve the weights from your own static directory instead, copy `.env.example` to `.env` and set `VITE_TAPLOG_MODEL_PATH`.
 
@@ -157,8 +157,8 @@ Taplog is **100% client-side** and requires no backend server or account:
 | Shortcut | Action |
 |---|---|
 | `Ctrl + Shift + E` / `Cmd + Shift + E` | Toggle the discreet HCI Study Control Bar |
-| `Alt + 1` | Switch to **Schemas** view (inside a lecture) |
-| `Alt + 2` | Switch to **Editorial** view (inside a lecture) |
+| `Alt + 1` | Switch to **Schemas** view (inside a talk) |
+| `Alt + 2` | Switch to **Editorial** view (inside a talk) |
 | `Esc` | Close the open Trace Drawer, Import sheet, or Study Tasks panel |
 
 ### Direct URL Parameters
