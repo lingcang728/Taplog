@@ -11,6 +11,7 @@
 | [materials/素材登记.md](materials/素材登记.md) | 讲座素材登记表：A、B、C 类各是哪几场，C 类的核对结果 |
 | [materials/测试用例.md](materials/测试用例.md) | 每场讲座的“结论 → 远处补充”时间点、正式测试题和标准答案、原型要用的要点和片段 |
 | [materials/字幕扫描结果.md](materials/字幕扫描结果.md) | 字幕扫描脚本的输出 |
+| [research/访谈提纲.md](research/访谈提纲.md) | 线上访谈的问题、开场白、文字版、记录表（中文访谈用，英文版放报告附录） |
 | [diary/](diary/) | Diary 草稿（英文），定稿后再复制进 Word 模板 |
 | `figures/` | 报告要用的图。`F02-late-caveat-gaps.svg` 是远距离补充的统计图 |
 | `../../tools/scan_caveats.py` | 扫描讲座字幕，找出“隔很久才补充或改口”的候选句子 |
