@@ -9,3 +9,11 @@ coverage/
 specification.md
 选题初稿-*.md
 
+
+# 讲座素材（视频、音频、字幕）不进仓库
+*.mp4
+*.m4a
+*.mp3
+*.wav
+*.srt
+*.vtt
