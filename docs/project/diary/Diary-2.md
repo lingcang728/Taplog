@@ -24,7 +24,7 @@
 1. **Topic.** In Diary 1 we had three open directions. After the early research we chose a different problem: [one sentence on why the three earlier directions were dropped]. The new topic is AI-generated notes for long recorded talks that let readers trace each point back to *all* the places in the recording that support, qualify or correct it, not only to one timestamp.
 2. **Research tasks from Diary 1.** [One line per member on the result: existing products checked, classmates asked, papers found, feasibility of prototype tools, access to test users.]
 3. **Proposal.** We reviewed the proposal together and submitted it on Canvas.
-4. **Presentation order.** We drew number 9 in the presentation lottery.
+4. **Presentation order.** We drew ninth place in the presentation order.
 
 ## Discussed problems now
 
